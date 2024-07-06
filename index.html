@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="CodingDesign">
+  <title>Buscar Receitas por Nome</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Importa o arquivo de estilos CSS externo -->
+</head>
+<body>
+  <header>
+    <h1>Receitas com API</h1> <!-- Título principal da página -->
+  </header>
+  <div class="container"> <!-- Contêiner principal -->
+    <main>
+      <form id="search-form"> <!-- Formulário de busca de receitas -->
+        <input type="text" id="recipe-name" placeholder="Digite o nome da receita"> <!-- Campo de entrada para o nome da receita -->
+        <button type="submit">Buscar</button> <!-- Botão de busca -->
+      </form>
+      <div id="results" class="results-container"></div> <!-- Contêiner para exibir os resultados -->
+    </main>
+  </div>
+  <script src="script.js"></script> <!-- Importa o arquivo de script JavaScript -->
+</body>
+</html>

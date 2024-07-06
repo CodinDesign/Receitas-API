@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos do corpo */
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to right, gold, greenyellow, darkorange);
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Cabeçalho (h1) */
+h1 {
+  font-family: "Staatliches", sans-serif;
+  position: fixed; /* Fixa o título na parte superior da página */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza horizontalmente */
+  color: white;
+  backdrop-filter: blur(10px); /* Aplica um efeito de desfoque ao fundo */
+  border: 2px solid white;
+  border-radius: 5px 15px 5px 15px; /* Bordas arredondadas */
+  padding: 10px;
+  margin: 10px 0; /* Margens superior e inferior de 10px */
+  font-size: 50px;
+  width: 90%; /* Largura ajustada para ocupar 90% da largura da tela */
+  max-width: 1000px; /* Largura máxima para evitar que o título fique muito largo em telas grandes */
+  text-align: center; /* Centraliza o texto */
+  z-index: 999; /* Coloca o título acima dos outros elementos */
+}
+
+/* Contêiner principal de conteúdo */
+main {
+  max-width: 1000px;
+  width: 90%; /* Largura ajustada para ocupar 90% da largura da tela */
+  padding: 20px;
+  margin: 120px auto 20px auto; /* Margem superior ajustada para evitar que o conteúdo fique muito próximo ao título */
+  background-color: darkorange;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza todos os elementos filhos verticalmente */
+  border-radius: 5px 15px 5px 15px; /* Bordas arredondadas */
+  border: 2px solid black;
+}
+
+/* Estilos do formulário */
+form {
+  display: flex;
+  flex-direction: row; /* Ajusta os elementos do formulário em linha */
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%; /* Ajuste para ocupar toda a largura do container */
+  max-width: 600px; /* Largura máxima para evitar que o formulário fique muito largo */
+  justify-content: center; /* Centraliza os elementos horizontalmente */
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border-radius: 0 10px 10px 0; /* Borda arredondada no lado direito do input */
+  border: 2px solid black;
+  width: 70%; /* Ajusta a largura do input para ocupar 70% do espaço disponível */
+  max-width: 300px; /* Largura máxima para evitar que o input fique muito largo */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px 15px 5px 15px; /* Borda arredondada no lado esquerdo do botão */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: gold;
+}
+
+/* Estilos do contêiner de resultados */
+.results-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%; /* Largura ajustada para ocupar 90% da largura da tela */
+  max-width: 1000px; /* Largura máxima para evitar que os resultados fiquem muito largos */
+}
+
+/* Estilos dos itens de receita */
+.recipe-item {
+  width: 300px;
+  margin: 10px;
+  padding: 15px;
+  background-color: red;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease-in-out; /* Transição suave ao passar o mouse */
+}
+
+.recipe-item:hover {
+  transform: translateY(-5px); /* Levanta o item ao passar o mouse */
+}
+
+.recipe-item img {
+  width: 100%;
+  border-radius: 10px 10px 0 0; /* Borda arredondada na imagem */
+  border: 2px solid black;
+}
+
+.recipe-item-content {
+  padding: 10px 0;
+}
+
+.recipe-item-content h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: white;
+}
+
+.recipe-item-content p {
+  margin-bottom: 5px;
+  font-size: 14px;
+}

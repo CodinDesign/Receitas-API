@@ -45,5 +45,5 @@ A estrutura do projeto é simples e consiste nos seguintes arquivos:
 
 ## Créditos
 
-Este projeto foi desenvolvido por C&D CodingDesign como parte de um exercício prático para demonstrar habilidades em desenvolvimento web front-end.
-
+Este projeto foi desenvolvido por C&D CodingDesign como parte de um exercício prático para demonstrar habilidades em desenvolvimento web front-end e back-end.
+ 
